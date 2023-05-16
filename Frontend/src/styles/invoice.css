@@ -1,0 +1,134 @@
+.parentBox {
+  /* for both tabs- Invoice & Search */
+  display: flex;
+  flex-direction: column;
+  /*  */
+  background-color: #504e4e;
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+
+  /* background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png"); */
+  /* need to removed this URL */
+  /*  */
+  /* experimental */
+  min-height: calc(100vh - 148px);
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  margin-top: 53px;
+}
+
+.box-invoice {
+  display: grid;
+  grid-template-columns: 60vw 30vw;
+  /* grid-template-columns: 900px 450px; */
+  /* justify-content: center; */
+  /* width: 400px; */
+  /* border-bottom-left-radius: 12px; */
+  /* border-bottom-right-radius: 12px; */
+  /*  */
+  /* box-sizing: border-box;
+  width: 100vw; */
+  /*  */
+}
+
+.invoiceBox {
+  padding: 6px;
+  display: grid;
+  background-color: #fff;
+  grid-template-columns: repeat(8, 12.5%);
+  grid-template-areas:
+    "clientGSTIN clientGSTIN tradeName tradeName tradeName . . ."
+    "address address address address address address address address"
+    "name name name name qty rate rate addBtn"
+    "products products products products products products products products"
+    " gstRate . . . . . fooInv fooInv";
+  /* "gstRate . . . . ."; */
+  /* margin: 10px;
+display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
+.invoiceBox input {
+  /* all: unset; */
+  /* text-align: center; */
+  margin: 6px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 5.5px;
+  padding-left: 11px;
+  font-size: 0.9em;
+}
+
+.invoiceBox .products {
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 11px;
+  padding-top: 0px;
+  margin: 6px;
+  max-height: 210px;
+  overflow: auto;
+}
+
+.products table {
+  border-spacing: 0px;
+}
+.products thead td {
+  padding: 8px;
+  border-bottom: 1px solid black;
+}
+/*  */
+/*  */
+.btns {
+  /* background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; */
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* height: fit-content; */
+  /* padding-top: 40px; */
+  /* padding-bottom: 40px; */
+  border-radius: 18px;
+  max-height: 200px;
+}
+
+.btns .submit,
+.btns .download {
+  all: unset;
+  box-sizing: border-box;
+  width: 6em;
+  text-align: center;
+  font-size: 1.2em;
+  border: 0px;
+  font-family: "Times New Roman";
+  padding: 14px;
+  border-radius: 7px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 1s;
+}
+.btns .submit {
+  background-color: rgb(2, 143, 2);
+}
+.btns .submit:hover {
+  background-color: rgba(40, 209, 40, 0.911);
+}
+/*  */
+.btns .download {
+  background-color: #0069d5;
+}
+.btns .download:hover {
+  background-color: #4aa3ff;
+}
+
+/* .btns .download {
+  color: black;
+  background-color: skyblue;
+  padding: 7px;
+  text-decoration: none;
+  border-radius: 6px;
+} */

@@ -1,0 +1,59 @@
+body {
+  all: unset;
+  /* position: relative; */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  /* background-color: #141414a6; */
+  /* display: flex;
+  justify-content: center; */
+}
+
+#navBar {
+  all: unset;
+  /* padding: 5px; */
+  /*  */
+  /*Experimental  */
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+
+  /*  */
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(46, 44, 44);
+  color: white;
+  /*  */
+  flex-wrap: wrap;
+  /*  */
+}
+.Link {
+  all: unset;
+  font-size: 16px;
+  padding: 17px;
+  color: white;
+  transition: color 0.6s, background-color 0.6s;
+}
+.Link:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: black;
+}
+/*  */
+/*  */
+/*  */
+/* Alert CSS */
+@keyframes bannerEasyIn {
+  from {
+    top: -20px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+#bannerMsg {
+  /* position: absolute; */
+  top: 0px;
+  left: 0px;
+  animation-name: bannerEasyIn;
+  animation-duration: 1s;
+}

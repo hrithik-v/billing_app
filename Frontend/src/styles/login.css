@@ -1,0 +1,62 @@
+.box-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #3c3242;
+  background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+  /* need to removed this URL */
+  /* padding-top:23px; */
+  /* padding-bottom: 35px; */
+  /*  */
+  /* experimental */
+  min-height: calc(100vh - 148px);
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  margin-top: 53px;
+}
+
+.login {
+  box-shadow: 0px 22px 61px rgb(0, 0, 0, 0.6);
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 1.7rem;
+  padding-left: 2.6rem;
+  padding-right: 2.6rem;
+  width: 20%;
+  /*  */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: repeat(3, 33.3%);
+  grid-template-areas:
+    "userid userid userid"
+    "pass pass pass"
+    ". btn .";
+}
+
+.login input {
+  all: unset;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: 6px;
+  padding: 10px;
+  padding-left: 13px;
+  font-size: 1rem;
+}
+
+.login input[value="Login"] {
+  text-align: center;
+  font-size: 1.15rem;
+  border: 0px;
+  font-family: "Times New Roman";
+  padding: 10px;
+  border-radius: 7px;
+  color: white;
+  background-color: rgb(2, 143, 2);
+  transition: background-color 1s;
+}
+.login input[value="Login"]:hover {
+  background-color: rgba(40, 209, 40, 0.911);
+  cursor: pointer;
+}
